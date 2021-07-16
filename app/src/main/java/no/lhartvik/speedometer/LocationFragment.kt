@@ -32,7 +32,7 @@ class LocationFragment : Fragment() {
                 locationResult ?: return
                 for (location in locationResult.locations) {
                     binding.tekst1.text =
-                        "${location?.speed?.roundToInt().toString().padStart(2, '0')}"
+                        "${location?.speed?.let {  (3.6 * it).roundToInt().toString().padStart(2, '0')}}"
                     binding.tekst2.text =
                         "${location?.let { SimpleDateFormat("HH:mm:ss").format(Date(it.time)) }}"
                     binding.tekst3.text = "${location?.latitude}, ${location?.longitude}, ${locationResult.locations.size}"
