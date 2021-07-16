@@ -7,7 +7,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Ok frust</string>
+    <string name="fart_default">Ok</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_first_fragment2">tekst2</string>
+    <string name="hello_first_fragment3">tredje</string>
 </resources>
